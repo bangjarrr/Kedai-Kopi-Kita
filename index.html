@@ -20,7 +20,11 @@
             =
         </div>
 
+        <div class="menu-icon hidden" id="menu-iconX">
+            x
+        </div>
         <ul class="nav-item hidden" id="menu-list">
+            <hr />
             <li class="list-item">
                 <a href="#home">Home</a>
             </li>
@@ -32,6 +36,15 @@
             </li>
             <li class="list-item">
                 <a href="#contact">Contact</a>
+            </li>
+            <li class="dropdown list-item">
+                <a href="#" class="dropbtn">Social Media ></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                </div>
             </li>
         </ul>
     </nav>
@@ -147,7 +160,7 @@
 
     <!-- Contact Start -->
 
-    <section class="contact" id="contact">
+    <section class="contact line" id="contact">
         <div class="contact-content">
             <div class="contact-header">
                 <h1>Kontak <span>Kami</span></h1>
@@ -170,13 +183,12 @@
                 <div class="contact-box">
                     <a href="#">
                         <div class="contact-logo">
-                            <img src="./img/maps.jpg" alt="maps">
+                            <img src="./img/maps.jpg" alt="maps" id="maps">
                             <h2>Alamat <span>Kami</span></h2>
                         </div>
         
                         <div>
                             <p>Jln Rahmatahalu Lorem ipsum dolor sit.</p>
-                            <i class="fa-solid fa-right-long"></i>
                         </div>
                       </a>
                 </div>
@@ -201,6 +213,46 @@
     </section>
 
     <!-- Contact Finish -->
+
+    <!-- Footer Start -->
+
+    <section class="footer line" id="footer">
+        <footer class="footer-content">
+            <div class="img-footer">
+                <img src="./img/footer.jpg" alt="footer">
+            </div>
+            <div class="footer-box">
+                <h3>Kritik <span>& Saran</span></h3>
+                <p>
+                    Jika anda puas, maka ajak teman - teman kalian ke sini. <span style="color: var(--font-body);">Jika anda
+                    kurang puas kirim pesan di bawah ini.</span>
+                </p>
+      
+                <form class="form">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="enter email"
+                        required
+                    />
+                    <br />
+                    <input 
+                        type="textarea" 
+                        name="pesan" 
+                        id="pesan"
+                        placeholder="Pesan"
+                        required
+                    />
+                    <br />
+                    <button type="submit" id="submit">
+                        Kirim
+                    </button>
+                </form>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Footer Finish -->
     
     <script src="script.js"></script>
 
