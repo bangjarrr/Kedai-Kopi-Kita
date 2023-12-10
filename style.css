@@ -554,7 +554,7 @@ body {
 
 .footer .footer-content .img-footer img { 
     width: 100%;
-    height: 100%;
+    height: 30rem;
 }
 
 .footer .footer-content .footer-box .form {
@@ -564,13 +564,47 @@ body {
 .footer .footer-content .footer-box input, button {
     margin: 10px auto;
     padding: 5px 20px;
-} 
+}
+
+#submit {
+    background: var(--white);
+    border: none;
+    padding: 5px 50px;
+    color: var(--bg);
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background: var(--span);
+    transform: scale(1.2);
+}
 
 @media only screen and (max-width: 768px) {
 
-    .footer .footer-content .img-footer img {
+    .footer .footer-content .footer-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--bg);
+        font-size: 10px;
+        font-weight: 600;
+        margin: 15px;
+    }
+    
+    .footer .footer-content .img-footer img { 
         width: 100%;
-        height: 10rem;
+        height: 17rem;
+    }
+    
+    .footer .footer-content .footer-box .form {
+        margin: 5px;
+    }
+    
+    .footer .footer-content .footer-box input, button {
+        border: 1px solid #000;
+        margin: 4px auto;
+        padding: 1px 15px;
     }
     
     .footer .footer-content .footer-box {
