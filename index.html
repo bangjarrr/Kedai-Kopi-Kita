@@ -387,7 +387,7 @@
 
     <!-- Order Start -->
 
-    <section class="order" id="ordernow">
+    <section class="order line" id="ordernow">
         <div class="order-content">
             <div class="order-header">
                 <h1><span>Order </span>Now</h1>
@@ -395,42 +395,43 @@
             </div>    
             <div class="order_main">
     
-                <form action="#">
+                <form action="" id="myForm">
     
                     <div class="input">
-                        <p>Name</p>
-                        <input type="text" placeholder="you name">
+                        <p>Nama</p>
+                        <input type="text" id="nama" placeholder="nama anda" required>
                     </div>
     
                     <div class="input">
                         <p>Email</p>
-                        <input type="email" placeholder="you email">
+                        <input type="email" id="email" placeholder="email anda" required>
                     </div>
     
                     <div class="input">
-                        <p>Number</p>
-                        <input placeholder="you number">
+                        <p>Nomor Hp</p>
+                        <input id="nomorHp" placeholder="nomor hp">
                     </div>
     
                     <div class="input">
-                        <p>How Much</p>
-                        <input type="number" placeholder="how many order">
+                        <p>Pesan berapa ?</p>
+                        <input type="number" id="jumlahPesanan" placeholder="berapa banyak pesanan anda ?">
                     </div>
     
                     <div class="input">
-                        <p>You Order</p>
-                        <input placeholder="food name">
+                        <p>Pesan apa ?</p>
+                        <input id="namaPesanan" placeholder="nama pesanan">
                     </div>
     
                     <div class="input">
-                        <p>Address</p>
-                        <input placeholder="you Address">
+                        <p>Alamat</p>
+                        <input id="alamat" placeholder="alamat lengkap anda">
                     </div>
                     
                     <br />
                     <br />
-                    <a href="#" class="order_btn">Order Now</a>
-    
+                    <center style="text-align: center; justify-content:center; margin-top:50px;">
+                        <button type="submit" class="order_btn" onclick="sendToWhatsApp()">Order Now</button>
+                    </center>
                 </form>
     
             </div>
