@@ -45,10 +45,15 @@
             <li class="dropdown list-item">
                 <a href="#" class="dropbtn" id="sosmed">Social Media ></a>
                 <div class="dropdown-content" id="drop-down-sosmed">
+                    <br />
                     <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                    <br />
                     <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                    <br />
                     <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    <br />
                     <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    <br />
                 </div>
             </li>
         </ul>
@@ -399,32 +404,32 @@
     
                     <div class="input">
                         <p>Nama</p>
-                        <input type="text" id="nama" placeholder="nama anda" required>
+                        <input type="text" name="nama" id="nama" placeholder="nama anda" required>
                     </div>
     
                     <div class="input">
                         <p>Email</p>
-                        <input type="email" id="email" placeholder="email anda" required>
+                        <input type="email" name="email" id="email" placeholder="email anda" required>
                     </div>
     
                     <div class="input">
                         <p>Nomor Hp</p>
-                        <input id="nomorHp" placeholder="nomor hp">
+                        <input id="nomorHp" name="no telpon" placeholder="nomor hp" required>
                     </div>
     
                     <div class="input">
                         <p>Pesan berapa ?</p>
-                        <input type="number" id="jumlahPesanan" placeholder="berapa banyak pesanan anda ?">
+                        <input type="number" name="jumlah pesanan" id="jumlahPesanan" placeholder="berapa banyak pesanan anda ?" required>
                     </div>
     
                     <div class="input">
                         <p>Pesan apa ?</p>
-                        <input id="namaPesanan" placeholder="nama pesanan">
+                        <input id="namaPesanan" name="nama pesanan" placeholder="nama pesanan" required>
                     </div>
     
                     <div class="input">
                         <p>Alamat</p>
-                        <input id="alamat" placeholder="alamat lengkap anda">
+                        <input id="alamat" name="alamat" placeholder="alamat lengkap anda" required>
                     </div>
                     
                     <br />
@@ -518,6 +523,8 @@
                     <input
                         type="email"
                         name="email"
+                        class="email"
+                        id="email"
                         placeholder="enter email"
                         required
                     />
