@@ -280,6 +280,7 @@ body {
     .blog-content .blog-body .blog-card .card-item {
         text-align: center;
         margin: 20px 40px;
+        padding-bottom: 15px;
         border: 1px solid var(--black);
         box-shadow: 10px 10px 10px var(--black);
     }
@@ -400,7 +401,36 @@ body {
     transform: scale(1.1);
     transition: all ease-out;
     transition-duration: 1.1s;
+    box-shadow: 0px 0px 20px #ff0000;
 }
+
+.menu .menu-content .btn-link {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px -50px 0px;
+}
+
+.menu .menu-content .btn-link button{
+    text-decoration: none;
+    border: none;
+    padding: 20px 70px;
+    cursor: pointer;
+    background: var(--white);
+    color: var(--bg);
+    border-radius: 10px;
+}
+
+.menu .menu-content .btn-link button:hover {
+    background: var(--para-font);
+    color: var(--black);
+    transform: scale(0.9);
+    transition: all;
+    transition-duration: 1.1s;
+    box-shadow: 0px 0px 40px #ff0000;
+}
+
+
 
 @media only screen and (max-width: 768px ) {
     .menu .menu-content .menu-card {
@@ -718,10 +748,10 @@ body {
 }
 
 .contact .contact-content .container .contact-box:hover {
-    background: linear-gradient(to right, var(--bg),var(--font-body));
     transform: scale(0.9);
     transition: all ease;
     transition-duration: 1.2s;
+    box-shadow: 0px 0px 20px var(--black);
 }
 
 .contact .contact-content .container .contact-box .contact-logo{
