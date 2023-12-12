@@ -1,3 +1,5 @@
+// Menangani peristiwa apabila button pada tampilan hp saat ditekan
+
 var menuIcon = document.getElementById('menu-icon')
 var menuList = document.getElementById('menu-list')
 var menuIconX = document.getElementById('menu-iconX')
@@ -13,6 +15,8 @@ menuIconX.addEventListener('click', () => {
     menuList.classList.toggle ('hidden');
     menuIconX.classList.toggle ('hidden');
 });
+
+// Menangani tombol sosial media
 
 $(document).ready(function () {
     // Menangani peristiwa klik pada tombol "Social Media"
@@ -31,6 +35,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    
     // Menangani klik pada menu navbar untuk scroll halus
     $(".nav-item a").on('click', function (event) {
         if (this.hash !== "") {
@@ -42,10 +47,24 @@ $(document).ready(function () {
             // Animasi scroll halus
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, 'easeInOutExpo'); //  kecepatan dan jenis animasi 
+            }, 1500, 'easeInOutExpo'); //  kecepatan dan jenis animasi 
+        }
+    });
+
+    $(".nav-link").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, 'easeInOutExpo');
         }
     });
 });
+
+// Untuk mengirim ke WhatsaApp
 
 function sendToWhatsApp() {
     var nomorWhatsApp = '6281615650796';
@@ -73,9 +92,12 @@ function sendToWhatsApp() {
     window.open(linkWhatsApp, '_blank');
 }
 
-document.getElementById('myForm').addEventListener('submit', function(event) {
+var myForm = document.getElementById('myForm').value;
+
+myForm.addEventListener('submit', function(event) {
     event.preventDefault();
     sendToWhatsApp();
+    myForm.reset();
 });
 
 
