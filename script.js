@@ -35,9 +35,23 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    
+
     // Menangani klik pada menu navbar untuk scroll halus
-    $(".nav-item a") && $(".nav-link").on('click', function (event) {
+    $(".nav-item a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            // Simpan hash
+            var hash = this.hash;
+
+            // Animasi scroll halus
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, 'easeInOutExpo'); //  kecepatan dan jenis animasi 
+        }
+    });
+
+    $(".nav-link").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 
