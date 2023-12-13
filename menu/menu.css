@@ -143,8 +143,8 @@ button:focus {
 
     .menu-content .menu-card {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
         justify-content: center;
         text-align: center;
     }
@@ -154,6 +154,7 @@ button:focus {
         justify-content: center;
         text-align: center;
         margin: 30px;
+        width: 85%;
         border: 1px solid var(--black);
         box-sizing: border-box;
         overflow: hidden;
@@ -167,35 +168,6 @@ button:focus {
         padding: 20px;
     }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&family=Poppins:wght@100;300;700&display=swap");
-
-:root {
-    --font-heading: #b68834;
-    --font-body: #ff9900 ; 
-    --para-font: #928d8daa;
-    --black: #222222;
-    --bg: #fff;
-    --white: #6b6363;
-    --span: #c58d24;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins , sans-serif;
-}
-
-span {
-    color: var(--span);
-    border-bottom: 2px solid var(--font-body);
-}
-
-body {
-    background: var(--bg);
-}
-
 
 /* Order Start */
 
@@ -255,7 +227,7 @@ body {
 @media only screen and (max-width:768px ) {
 
     .order {
-        background-image: url(/img/coffeIMG.png);
+        background-image: url(./img/coffeIMG.png);
     }
 
     .order .order_main {
@@ -288,7 +260,7 @@ body {
 @media only screen and (min-width:769px ) {
 
     .order {
-        background-image: url(/img/coffe-orderIMG.png);
+        background-image: url(./img/coffe-orderIMG.png);
         width: 100%;
         height: 100%;
         display: block;
