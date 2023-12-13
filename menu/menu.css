@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:focus {
+    background: #ffd700;
+}
+
+
+.menu-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#foodContent {
+    background-color: #ffd700;
+}
+
+#drinkContent {
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+    <nav>
+        <button id="foodButton" onclick="showFoodContent()">Makanan</button>
+        <button id="drinkButton" onclick="showDrinkContent()">Minuman</button>
+    </nav>
+
+    <div class="content" id="content">
+        <!-- Konten Makanan atau Minuman akan ditampilkan di sini -->
+        <div id="foodContent" class="menu-content">
+            <h2>Makanan</h2>
+            <p>Isi dari menu makanan...</p>
+        </div>
+        <div id="drinkContent" class="menu-content">
+            <h2>Minuman</h2>
+            <p>Isi dari menu minuman...</p>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
