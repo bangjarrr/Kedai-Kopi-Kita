@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Kita</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Link Animasi halaman -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Link Animasi saat di scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
 </head>
 <body>
 
     <!-- Navbar Selesai -->
 
-    <nav class="navbar">
+    <nav class="navbar animate__animated animate__fadeInUp">
         <div class="navbar-brand">
             <img src="./img/logo.jpg" alt="Logo">
             <h5>Kopi Kita</h5>
@@ -63,7 +71,7 @@
 
     <!-- Content Start -->
 
-    <section class="home line" id="home">
+    <section class="home line animate__animated animate__fadeInUp" id="home">
         <div class="img-content">
             <img src="img/header.jpg" alt="" width="100%">
         </div>
@@ -87,37 +95,37 @@
 
     <!-- About Start -->
 
-    <section class="blog line" id="blog">
+    <section class="blog line animate__animated animate__fadeInUp" id="blog">
         <div class="blog-content">
             <div class="blog-header">
                 <p>
                     Selamat datang di Cafe Kopi Kita, tempat nikmati pengalaman kopi tak terlupakan. Kami sajikan kopi Setiap tegukan membawa Anda pada perjalanan cita rasa kopi yang istimewa. Selamat menikmati kehangatan dan kenyamanan di Cafe Kopi Kita.</p>
             </div>
             <div class="blog-body">
-                <div class="card-title">
+                <div class="card-title" data-aos="fade-down">
                     <h1>Layanan <span>Kami</span></h1>
                     <h6>Kami melayani anda dengan penuh semangat</h6>
                 </div>
                 <div class="blog-card">
-                    <div class="card-item">
+                    <div class="card-item" data-aos="fade-down-right" data-aos-duration="1500">
                         <img src="./img/layanan1.jpg" alt="layanan1">
                         <footer>
                             Barista yang asik
                         </footer>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="fade-down-left" data-aos-duration="1500">
                         <img src="./img/layanan2.jpg" alt="layanan2">
                         <footer>
                             Tempat yang asri dan sejuk
                         </footer>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="fade-up-right" data-aos-duration="1500">
                         <img src="./img/layanan4.jpg" alt="layanan3">
                         <footer>
                             Tempat yang higienis dan bersih
                         </footer>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="fade-up-left" data-aos-duration="1500">
                         <img src="./img/layanan3.jpg" alt="layanan4">
                         <footer>
                             Pelayanan yang ramah
@@ -132,14 +140,14 @@
 
     <!-- Menu Start -->
 
-    <section class="menu line" id="menu">
+    <section class="menu line animate__animated animate__fadeInUp" id="menu">
         <div class="menu-content">
-            <div class="card-title">
+            <div class="card-title" data-aos="fade-down">
                 <h1>Produk <span>Kami</span></h1>
                 <h6>Kami memberikan dan membuat kopi sesuai keinginan Anda</h6>
             </div>
             <div class="menu-card">
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -150,7 +158,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu2.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Hitam.</h1>
@@ -161,7 +169,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -172,7 +180,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -183,7 +191,18 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <a href="#ordernow" class="nav-link">
+                            <button class="button">Beli Sekarang</button>
+                        </a>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu2.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Hitam.</h1>
@@ -194,7 +213,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -205,7 +224,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -216,7 +235,18 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <a href="#ordernow" class="nav-link">
+                            <button class="button">Beli Sekarang</button>
+                        </a>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu2.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Hitam.</h1>
@@ -227,7 +257,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -238,7 +268,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -249,7 +279,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu2.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Hitam.</h1>
@@ -260,7 +290,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -271,62 +301,7 @@
                         </a>
                     </footer>
                 </div>
-                <div class="card-item">
-                    <img src="./img/menu1.jpg" alt="menu1">
-                    <footer>
-                        <h1>Kopi Macchiato.</h1>
-                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
-                        <h4>$1.0</h4>
-                        <a href="#ordernow" class="nav-link">
-                            <button class="button">Beli Sekarang</button>
-                        </a>
-                    </footer>
-                </div>
-                <div class="card-item">
-                    <img src="./img/menu2.jpg" alt="menu1">
-                    <footer>
-                        <h1>Kopi Hitam.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
-                        <h4>$0.6</h4>
-                        <a href="#ordernow" class="nav-link">
-                            <button class="button">Beli Sekarang</button>
-                        </a>
-                    </footer>
-                </div>
-                <div class="card-item">
-                    <img src="./img/menu1.jpg" alt="menu1">
-                    <footer>
-                        <h1>Kopi Macchiato.</h1>
-                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
-                        <h4>$1.0</h4>
-                        <a href="#ordernow" class="nav-link">
-                            <button class="button">Beli Sekarang</button>
-                        </a>
-                    </footer>
-                </div>
-                <div class="card-item">
-                    <img src="./img/menu1.jpg" alt="menu1">
-                    <footer>
-                        <h1>Kopi Macchiato.</h1>
-                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
-                        <h4>$1.0</h4>
-                        <a href="#ordernow" class="nav-link">
-                            <button class="button">Beli Sekarang</button>
-                        </a>
-                    </footer>
-                </div>
-                <div class="card-item">
-                    <img src="./img/menu2.jpg" alt="menu1">
-                    <footer>
-                        <h1>Kopi Hitam.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
-                        <h4>$0.6</h4>
-                        <a href="#ordernow" class="nav-link">
-                            <button class="button">Beli Sekarang</button>
-                        </a>
-                    </footer>
-                </div>
-                <div class="card-item">
+                <div class="card-item" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./img/menu1.jpg" alt="menu1">
                     <footer>
                         <h1>Kopi Macchiato.</h1>
@@ -338,7 +313,7 @@
                     </footer>
                 </div>
             </div>
-            <div class="btn-link">
+            <div class="btn-link" data-aos="fade-down" >
                 <a href="">
                     <button>Lihat menu lainnya</button>
                 </a>
@@ -350,75 +325,75 @@
 
     <!-- Galery Start -->
 
-    <section class="galery" id="galery">
+    <section class="galery animate__animated animate__fadeInUp" id="galery">
         <div class="galery-content">
-            <div class="galery-header">
+            <div class="galery-header" data-aos="fade-down">
                 <h1>Galeri <span>Kami</span></h1>
                 <h6>Kami selalu siap untuk anda</h6>
             </div>
             <div class="container">
                 <div class="galery-card">
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan1.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk rapat.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan2.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk mengerjakan tugas - tugas.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan3.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk ketemuan.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan4.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk Kita semua.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <img src="./img/layanan1.jpg">
+                        <h3>Lorem, ipsum.</h3>
+                        <p>
+                            Cocok untuk rapat.
+                        </p>
+                    </div>
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan2.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk mengerjakan tugas - tugas.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan3.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk ketemuan.
                         </p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
                         <img src="./img/layanan4.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
                             Cocok untuk Kita semua.
                         </p>
                     </div>
-                    <div class="card-item">
-                        <img src="./img/layanan3.jpg">
+                    <div class="card-item" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <img src="./img/layanan1.jpg">
                         <h3>Lorem, ipsum.</h3>
                         <p>
-                            Cocok untuk ketemuan.
-                        </p>
-                    </div>
-                    <div class="card-item">
-                        <img src="./img/layanan4.jpg">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>
-                            Cocok untuk Kita semua.
+                            Cocok untuk rapat.
                         </p>
                     </div>
                 </div>
@@ -430,13 +405,13 @@
 
     <!-- Order Start -->
 
-    <section class="order line" id="ordernow">
+    <section class="order line animate__animated animate__fadeInUp" id="ordernow">
         <div class="order-content">
-            <div class="order-header">
+            <div class="order-header" data-aos="fade-down">
                 <h1><span>Order </span>Now</h1>
                 <h6>Pesan sekarang juga !</h6>
             </div>    
-            <div class="order_main">
+            <div class="order_main" data-aos="flip-right" data-aos-duration="1500">
     
                 <form id="myForm">
     
@@ -486,13 +461,13 @@
 
     <!-- Contact Start -->
 
-    <section class="contact line" id="contact">
+    <section class="contact line animate__animated animate__fadeInUp" id="contact">
         <div class="contact-content">
-            <div class="contact-header">
+            <div class="contact-header" data-aos="fade-down">
                 <h1>Kontak <span>Kami</span></h1>
                 <h6>Kami selalu ada di sini untuk Anda</h6>
             </div>
-            <div class="container">
+            <div class="container" data-aos="zoom-out" data-aos-duration="1500">
                 <div class="contact-box">
                     <a href="mailto:alfajjar123@gmail.com">
                         <div class="contact-logo">
@@ -545,7 +520,7 @@
 
     <!-- Footer Start -->
 
-    <section class="footer line" id="footer">
+    <section class="footer line animate__animated animate__fadeInUp" id="footer">
         <footer class="footer-content">
             <div class="img-footer">
                 <img src="./img/footer.jpg" alt="footer">
@@ -585,7 +560,15 @@
 
     <!-- Footer Finish -->
 
+    <!-- Script Js default -->
     <script src="script.js"></script>
+
+    <!-- Script Animasi -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

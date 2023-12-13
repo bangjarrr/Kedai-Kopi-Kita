@@ -37,7 +37,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     
     // Menangani klik pada menu navbar untuk scroll halus
-    $(".nav-item a").on('click', function (event) {
+    $(".nav-item a") && $(".nav-link").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 
@@ -48,18 +48,6 @@ $(document).ready(function () {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 1500, 'easeInOutExpo'); //  kecepatan dan jenis animasi 
-        }
-    });
-
-    $(".nav-link").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1500, 'easeInOutExpo');
         }
     });
 });
@@ -101,3 +89,28 @@ myForm.addEventListener('submit', function(event) {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var animatedElements = document.querySelectorAll(".animate__animated");
+
+    function checkVisibility() {
+        animatedElements.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate__fadeInUp");
+            }
+        });
+    }
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Panggil checkVisibility saat halaman dimuat dan saat digulir
+    checkVisibility();
+    window.addEventListener("scroll", checkVisibility());
+});
