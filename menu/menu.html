@@ -5,25 +5,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link Animasi saat di scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
+        <div class="nav-back">
+            <a href="/index.html">
+                <<
+            </a>
+        </div>
         <button id="foodButton" onclick="showFoodContent()">Makanan</button>
         <button id="drinkButton" onclick="showDrinkContent()">Minuman</button>
+        <button id="orderButton" onclick="showOrderContent()">OrderNow</button>
     </nav>
 
     <div class="content" id="content">
-        <!-- Konten Makanan atau Minuman akan ditampilkan di sini -->
-        <div id="foodContent" class="menu-content">
-            <h2>Makanan</h2>
-            <p>Isi dari menu makanan...</p>
+
+        <!-- Content Food start -->
+
+        <div id="foodContent" class="menu-content animate__animated animate__fadeInRight">
+            <div class="menu-card" >
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/buger.jpg" alt="menu1">
+                    <footer>
+                        <h1>Burger.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h4>$1.0</h4>
+                        <button class="button" onclick="showOrderContent()">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./img/cake.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kue.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+            </div>
         </div>
-        <div id="drinkContent" class="menu-content">
-            <h2>Minuman</h2>
-            <p>Isi dari menu minuman...</p>
+
+        <!-- Content Drink Start -->
+
+        <div id="drinkContent" class="menu-content animate__animated animate__fadeInLeft">
+            <div class="menu-card" >
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu1.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Macchiato.</h1>
+                        <p>Macchiato adalah espresso yang diberi buih susu sebanyak satu atau dua sendok makan saja.</p>
+                        <h4>$1.0</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+                <div class="card-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/img/menu2.jpg" alt="menu1">
+                    <footer>
+                        <h1>Kopi Hitam.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi.</p>
+                        <h4>$0.6</h4>
+                        <button class="button">Beli Sekarang</button>
+                    </footer>
+                </div>
+            </div>
         </div>
+        
+        <!-- Content drink Finsih -->
+
+        <!-- Order Start -->
+
+        <div id="orderContent" class="menu-content animate__animated animate__fadeInLeft">
+
+            <section class="order" id="ordernow">
+            <div class="order-content">
+                <div class="order-header" data-aos="fade-down">
+                    <h1><span>Order </span>Now</h1>
+                    <h6>Ini adalah halaman terakhir pembelian !</h6>
+                    <h6>Jangan lupa apa yang akan kamu pesan tadi ya! dan cek juga kelengkapan semuanya <br>:)</h6>
+                    <h6>Pastikan kamu mengisi dengan benar ya !!</h6>
+                </div>    
+                <div class="order_main" data-aos="flip-right" data-aos-duration="1500">
+                    
+                    <form id="myForm">
+        
+                        <div class="input">
+                            <p>Nama</p>
+                            <input type="text" name="nama" id="nama" placeholder="nama anda" required>
+                        </div>
+        
+                        <div class="input">
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" placeholder="email anda" required>
+                        </div>
+        
+                        <div class="input">
+                            <p>Nomor Hp</p>
+                            <input id="nomorHp" name="no telpon" placeholder="nomor hp" required>
+                        </div>
+        
+                        <div class="input">
+                            <p>Pesan berapa ?</p>
+                            <input type="number" name="jumlah pesanan" id="jumlahPesanan" placeholder="berapa banyak pesanan anda ?" required>
+                        </div>
+        
+                        <div class="input">
+                            <p>Pesan apa ?</p>
+                            <input id="namaPesanan" name="nama pesanan" placeholder="nama pesanan" required>
+                        </div>
+        
+                        <div class="input">
+                            <p>Alamat</p>
+                            <input id="alamat" name="alamat" placeholder="alamat lengkap anda" required>
+                        </div>
+                        
+                        <br />
+                        <br />
+                        <center style="text-align: center; justify-content:center; margin-top:50px;">
+                            <button type="submit" class="order_btn" onclick="sendToWhatsApp()">Order Now</button>
+                        </center>
+                    </form>
+        
+                </div>
+        
+            </div>
+            </section>
+    
+        </div>
+        
+        <!-- Order Finish -->
     </div>
 
     <script src="menu.js"></script>
+
+    <!-- Script Animasi -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
