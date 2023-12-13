@@ -32,7 +32,7 @@ body {
     background: linear-gradient(to top, #895900 ,var(--font-heading),var(--font-body));
     display: flex;
     justify-content: space-around;
-    padding: 5px 2rem;
+    padding: 5px 1rem;
 }
 
 .navbar-brand {
@@ -116,6 +116,25 @@ body {
 
 
 @media only screen and (max-width : 768px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Poppins , sans-serif;
+    }
+    
+    span {
+        color: var(--span);
+        border-bottom: 2px solid var(--font-body);
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background: var(--bg);
+    }
 
     .navbar {
         flex-wrap: wrap;
