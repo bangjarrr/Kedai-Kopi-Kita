@@ -48,6 +48,14 @@ button:focus {
     color: var(--black);
 }
 
+#checkOutButton {
+    background: none;
+    align-items: center;
+}
+
+#checkOutButton:focus {
+    background: var(--para-font);
+}
 @media only screen and (max-width: 768px ) {
     .navbar {
         display: flex;
