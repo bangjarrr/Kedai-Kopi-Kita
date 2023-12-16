@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Tambahkan kelas animasi saat halaman dimuat
     animatedElements.forEach(function(element) {
-        element.classList.add("animate__fadeInUp");
+        element.classList.add("animate__fadeInDown");
     });
 });
 

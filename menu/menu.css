@@ -259,13 +259,23 @@ button:focus {
         background: #fac031;
         color: white;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 20px;
         text-decoration: none;
     }
     
     .order .order_main form .input input{
         width: 280px;
         height: 40px;
+        padding: 0 10px;
+        border: 2px solid #cccccc;
+        background: #eeeeee;
+        outline: none;
+        border-radius: 3px;
+        margin: 10px 0px ;
+    }
+    .order .order_main form .input textarea {
+        width: 280px;
+        height: 100px;
         padding: 0 10px;
         border: 2px solid #cccccc;
         background: #eeeeee;
@@ -296,9 +306,10 @@ button:focus {
         padding: 10px 50px;
         background: #fac031;
         color: white;
+        justify-content: center;
         text-align: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
         text-decoration: none;
     }
 
@@ -310,6 +321,17 @@ button:focus {
         background: #eeeeee;
         outline: none;
         border-radius: 3px;
+    }
+
+    .order .order_main form .input textarea {
+        width: 400px;
+        height: 150px;
+        padding: 0 10px;
+        border: 2px solid #cccccc;
+        background: #eeeeee;
+        outline: none;
+        border-radius: 3px;
+        margin: 10px 0px ;
     }
 }
 
