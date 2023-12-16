@@ -710,35 +710,6 @@ body {
     height: 30rem;
 }
 
-/* .footer .footer-content .footer-box .form {
-    margin: 15px;
-}
-
-.email {
-    width: 50%;
-}
-
-.footer .footer-content .footer-box input {
-    margin: 10px auto;
-    padding: 5px 20px;
-    width: 80%;
-}
-
-#submit {
-    background: var(--white);
-    border: none;
-    padding: 5px 50px;
-    color: var(--bg);
-    border-radius: 5px;
-}
-
-#submit:hover {
-    background: var(--span);
-    transform: scale(1.2);
-    transition: all;
-    transition-duration: 1.1s;
-} */
-
 .footer .footer-content .footer-box .sosial {
     display: flex;
     justify-content: space-around;
@@ -809,25 +780,6 @@ body {
         height: 17rem;
     }
 
-    /*
-    
-    .footer .footer-content .footer-box .form {
-        margin: 5px;
-    }
-    
-    .footer .footer-content .footer-box input, button {
-        border: 1px solid #000;
-        margin: 4px auto;
-        padding: 1px 15px;
-    }
-    
-    .footer .footer-content .footer-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-    } */
 }
 
 /* Footer Finish */
