@@ -51,7 +51,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".nav-link").on('click', function (event) {
+    $(".nav-link a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 
