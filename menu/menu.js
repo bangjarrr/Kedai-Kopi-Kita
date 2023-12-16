@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Fungsi untuk menampilkan konten Order Now
     function showOrderContent() {
-        content.style.transform = 'translateY(-200%)';
+        content.style.transform = 'translateY(0)';
         foodContent.style.display = 'none';
         drinkContent.style.display = 'none';
         orderContent.style.display = 'block';
