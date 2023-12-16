@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const orderNowButtons = document.querySelectorAll(".button");
 
     // Tampilkan konten makanan secara default
-    showOrderContent();
+    showFoodContent();
 
     foodButton.addEventListener("click", function() {
         showFoodContent();
