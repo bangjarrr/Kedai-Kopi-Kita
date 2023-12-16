@@ -99,18 +99,17 @@ button:focus {
 }
 
 .content .menu-content .menu-card .card-item p{
-    margin: 10px;
+    margin: 20px;
 }
 
 .content .menu-content .menu-card .card-item h4{
-    margin: 10px;
+    margin: 20px;
     font-weight: 800;
 }
 
 .content .menu-content .menu-card .card-item:hover {
-    transform: translateY(1rem);
-    transition-duration: 1.5s;
-    transition-delay: 0.1s;
+    transform: translateY(2rem);
+    transition-duration: 1.2s;
     color: #ff0000;
 }
 
@@ -183,7 +182,7 @@ button:focus {
         width: 100%;
         box-sizing: border-box;
         margin: 0;
-        padding: 5px;
+        padding: 20px;
     }
 }
 

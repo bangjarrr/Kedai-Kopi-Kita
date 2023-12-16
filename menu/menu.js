@@ -84,7 +84,7 @@ function sendToWhatsApp() {
         var namaPesananNormalized = namaPesanan.toLowerCase().replace(/\s/g, '');
 
         if (!namaPesananValid.some(validOption => validOption.toLowerCase().replace(/\s/g, '') === namaPesananNormalized)) {
-            throw new Error('Nama Pesanan tidak valid. Silakan pilih opsi yang tersedia.');
+            throw new Error('Nama Pesanan tidak valid. Silakan pilih menu lainnya.');
         }
 
         // tautan WhatsApp 
