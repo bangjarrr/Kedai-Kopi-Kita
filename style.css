@@ -712,7 +712,7 @@ body {
 
 .footer .footer-content .footer-box .sosial {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin: 30px;
@@ -763,6 +763,11 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+
+    .footer .footer-content .footer-box .nav-link {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .footer .footer-content .footer-box {
         position: absolute;
