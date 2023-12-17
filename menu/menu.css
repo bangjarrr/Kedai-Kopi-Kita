@@ -29,15 +29,6 @@ body {
 
 /* Navbar start */
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-    z-index: 1000;
-}
-
 .nav-back a {
     color: #fff;
     text-decoration: none;
@@ -151,7 +142,6 @@ button:focus {
     }
 
     .content .menu-content .menu-card .card-item {
-        top: 20%;
         text-align: center;
         margin: 30px;
         border: 1px solid var(--black);
@@ -177,7 +167,6 @@ button:focus {
     }
 
     .menu-content .menu-card .card-item{
-        top: 20%;
         align-items: center;
         justify-content: center;
         text-align: center;

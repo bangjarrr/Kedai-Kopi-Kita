@@ -75,4 +75,3 @@ document.addEventListener("DOMContentLoaded", function() {
         element.classList.add("animate__fadeInDown");
     });
 });
-
