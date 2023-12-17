@@ -151,18 +151,65 @@ function sendToWhatsApp() {
             return;
         }
 
+        // FUngsi Validasi EMail
+
+        function validateEmail() {
+            var emailInput = document.getElementById('email');
+            var email = emailInput.value;
+        
+            // Pola ekspresi reguler untuk validasi email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+            if (emailRegex.test(email)) {
+                // Email valid
+                return true;
+            } else {
+                // Email tidak valid
+                return false;
+            }
+        }
+
+        // memanggil alert email valid
+
+        if (!validateEmail()) {
+            alert('Harap isi email dengan benar sebelum mengirim pesan.');
+            return;
+        }
+
         // Daftar nama pesanan yang valid
-        var namaPesananValid = [
+        var itemPesanan = [
+            '&',
+            ',',
+            'dan',
+            'dn',
+            'n',
+            '/',
+            'and',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '0',
+        ];
+
+        var namaNamaPesanan = [
             'kopi hitam',
             'cappucino',
             'saos',
             'burger',
         ];
 
-        // Mengecek apakah namaPesanan sesuai dengan opsi yang valid
-        var namaPesananNormalized = namaPesanan.toLowerCase().replace(/\s/g, '');
+        var semuaPesanan = itemPesanan.concat(namaNamaPesanan);
 
-        if (!namaPesananValid.some(validOption => validOption.toLowerCase().replace(/\s/g, '') === namaPesananNormalized)) {
+        // Mengecek apakah namaPesanan sesuai dengan opsi yang valid
+        var namaPesananValid = namaPesanan && semuaPesanan.map(item => item.toLowerCase().replace(/\s/g, ''));
+
+        if (!namaNamaPesanan.some(validOption => namaPesananValid.includes( validOption.toLowerCase()))) {
             throw new Error('Nama Pesanan tidak valid. Silakan pilih menu lainnya.');
         }
 
@@ -186,6 +233,8 @@ function sendToWhatsApp() {
 var myForm = document.getElementById('myForm');
 myForm.addEventListener("submit", function(event) {
     event.preventDefault();
+    // kirim ke whatsApp
     sendToWhatsApp();
+    // reset form setelah tekan tombol submit
     myForm.reset();
 });
